@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20190204 10:17:13.840">
+<suite id="s1" name="AddPerson" source="C:\Pycharm Project\Demo1\Core\AddPerson.robot">
+<test id="s1-t1" name="Login to HRM application">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://inprj-ipf06:8080/ehrmtestvaadinB19_1/login?USER_LANG=en</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190204 10:17:16.511" level="INFO">Opening browser 'chrome' to base url 'http://inprj-ipf06:8080/ehrmtestvaadinB19_1/login?USER_LANG=en'.</msg>
+<status status="PASS" starttime="20190204 10:17:16.510" endtime="20190204 10:17:33.645"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190204 10:17:33.646" endtime="20190204 10:17:34.838"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${dds}</var>
+</assign>
+<msg timestamp="20190204 10:17:34.846" level="INFO">${dds} = HRM</msg>
+<status status="PASS" starttime="20190204 10:17:34.838" endtime="20190204 10:17:34.847"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${dds}</arg>
+</arguments>
+<status status="PASS" starttime="20190204 10:17:34.847" endtime="20190204 10:17:34.848"></status>
+</kw>
+<status status="PASS" starttime="20190204 10:17:16.507" endtime="20190204 10:17:34.848" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190204 10:17:13.849" endtime="20190204 10:17:34.850"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="AddPerson">AddPerson</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
